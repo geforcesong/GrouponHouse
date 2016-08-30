@@ -1,0 +1,311 @@
+ul
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+div
+{
+    margin:0px;
+    padding:0px;
+}
+
+.clearFloat
+{
+    clear:both;
+}
+
+body
+{
+    background-color:#fff8e6;
+    font-family:Tahoma,Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    margin:0px;
+    padding:0px;
+}
+
+#siteHeader
+{
+    width:950px;
+    margin:0px auto 0px auto;
+}
+
+.nav
+{
+    width:100%;
+    height:50px;
+    color:#fff;
+    min-width:950px;
+    background-repeat:repeat-x;
+    background-image:url(../Content/images/icon_1020004.png);
+    background-position:0px -146px;
+}
+
+.MainHolderDIV
+{
+    width:950px;
+    margin:0px auto 0px auto;
+}
+
+#divNavigation
+{
+    width:950px;
+    margin:0px auto 0px auto;
+}
+
+#divNavigation ul li
+{
+    float:left;
+    line-height:35px;
+    margin-top:3px;
+    height:35px;
+    background-image:url(../Content/images/icon_1020004.png);
+    background-position:right -199px;
+    position:relative;
+}
+
+#divNavigation ul li .trangle
+{
+    width:0px;
+    height:0px;
+    left:26px;
+    top:25px;
+    display:none;
+}
+
+#divNavigation ul .selected .trangle
+{
+    display:block;
+    position:absolute;
+    border-width:5px 5px; 
+    border-style:solid; 
+    border-color:transparent transparent #ff3300 transparent;
+}
+
+#divNavigation ul li a
+{
+    color:White;
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    text-decoration:none;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#divNavigation ul .selected a
+{
+    background-color:#fff8ee;
+    color:#f60;
+}
+
+#divNavigation ul li a:hover
+{
+    background-color:#ff9c2b;
+}
+
+#divNavigation ul .selected a:hover
+{
+    background-color:#fff8ee;
+    color:#f60;
+}
+
+#divRightLinks
+{
+    float:right;
+}
+
+#divRightLinks ul li a
+{
+    font-size:12px;
+    font-weight:normal;
+}
+
+.footer
+{
+    height:300px;
+    width:100%;
+    background-repeat:repeat-x;
+    background-image:url(../Content/images/footer_n4.jpg);
+}
+
+#ulHomeProducts
+{
+    margin-left:24px;
+}
+
+#ulHomeProducts li
+{
+    float:left;
+    width:300px;
+    height:400px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+#ulHomeProducts .middle
+{
+    border-left:1px dashed #e5e5e5;
+    border-right:1px dashed #e5e5e5;
+}
+
+#ulHomeProducts li .items
+{
+    width:250px;
+    margin:10px 0px 0px 25px;
+}
+
+#ulHomeProducts li .items img
+{
+    cursor:pointer;
+}
+
+#ulHomeProducts li .items .price
+{
+    height:30px;
+    line-height:30px;
+    width:250px;
+    background-color:#f3f3f3;
+    float:left;
+}
+
+#ulHomeProducts li .items .price .leftPart
+{
+    float:left;
+    margin-left:5px;
+}
+#ulHomeProducts li .items .price .rightPart
+{
+    float:right;
+    margin-right:5px;
+}
+
+#ulHomeProducts li .items .price .leftPart font
+{
+    color:#a33721;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#ulHomeProducts li .items .price .rightPart font
+{
+    color:#a33721;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#ulHomeProducts li .items .newPrice
+{
+    height:50px;
+    line-height:50px;
+    width:250px;
+    background-image:url(../Content/images/s_bg_1012008.png);
+    background-position:0px -296px;
+    cursor:pointer;
+    float:left;
+    color:White
+}
+
+#ulHomeProducts li .items .newPrice span
+{
+    float:left;
+    margin-left:5px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+#ulHomeProducts li .items .newPrice span font
+{
+    font-size:28px;
+}
+
+#ulHomeProducts li .items .desp
+{
+    height:50px;
+    width:250px;
+    float:left;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+#ulHomeProducts li .items .desp span
+{
+    color:Black;
+    font-size:14px;
+}
+
+#ulHomeProducts li .items .desp span font
+{
+    color:Red;
+    font-weight:bold;
+}
+
+.footer
+{
+    margin-top:20px;
+}
+
+.footer .content
+{
+    width:735px;
+    margin:10px auto 0px auto;
+}
+
+.footer .content .box
+{
+    float:left;
+    width:146px;
+    height:150px;
+    border-right:1px dashed #d5d5d5;
+    margin-top:30px;
+}
+
+.footer .content .box span
+{
+    margin-left:25px;
+    font-size:14px;
+    font-weight:bold;
+    color:#333333;
+    line-height:25px;
+}
+
+.footer .content .box ul
+{
+    list-style-type:circle;
+    margin-left:30px;
+    font-size:14px;
+}
+.footer .content .box ul li
+{
+    line-height:22px;
+    color:#666666;
+}
+
+.footer .content .box ul li a
+{
+    color:#666666;
+}
+
+.footer .tip
+{
+    text-align:center;
+    width:100%;
+    clear:both;
+    color:#666666;
+    
+}
+
+.footer .tip span
+{
+    line-height:40px;
+}
+
+.footer .imgHolder
+{
+    text-align:center;
+    width:100%;
+    clear:both;
+}

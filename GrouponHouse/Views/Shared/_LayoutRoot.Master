@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <div id="siteHeader">
+            <div class="logo">
+                <img width="152" height="83" src='<%= ResolveUrl("~/Content/images/logo.png") %>'/>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div id="divNavigation">
+                <ul>
+                    <li <%if(ViewContext.Controller.ValueProvider.GetValue("controller").RawValue.ToString().ToLower() == "home"){ %>
+                            class="selected"
+                        <%} %>
+                    >
+                        <a href="#">首页</a>
+                        <div class="trangle"></div>
+                    </li>
+                    <li>
+                        <a href="#">住宅</a>
+                        <div class="trangle"></div>
+                    </li>
+                    <li>
+                        <a href="#">商铺</a>
+                        <div class="trangle"></div>
+                    </li>
+                    <li style="background-image:none;">
+                        <a href="#">写字楼</a>
+                        <div class="trangle" style="left:35px;"></div>
+                    </li>
+                </ul>
+                <div id="divRightLinks">
+                    <ul>
+                        <li>
+                            <a href="#">登录</a>
+                            <div class="trangle"></div>
+                        </li>
+                        <li style="background-image:none;">
+                            <a href="#">注册</a>
+                            <div class="trangle" style="left:35px;"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="MainHolderDIV">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <div class="box">
+                    <span>用户帮助</span>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">邮箱白名单设置</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">往期团购</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <span>获取更新</span>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">邮箱白名单设置</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">往期团购</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <span>商务合作</span>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">邮箱白名单设置</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">往期团购</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <span>公司信息</span>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">邮箱白名单设置</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">往期团购</a></li>
+                    </ul>
+                </div>
+                <div class="box" style="border-width:0px;">
+                    <span>手机软件</span>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">邮箱白名单设置</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">往期团购</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tip"><span>&copy; 2012 上海XX网络技术有限公司 沪ICP证2232321号 京ICP备23489723号 沪公网安备11021020201号</span></div>
+            <div class="imgHolder">
+                <img width="117" height="45" src='<%= ResolveUrl("~/Content/images/index_73.jpg") %>'/>
+                <img width="117" height="45" src='<%= ResolveUrl("~/Content/images/index_75.jpg") %>'/>
+                <img width="117" height="45" src='<%= ResolveUrl("~/Content/images/index_77.jpg") %>'/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
